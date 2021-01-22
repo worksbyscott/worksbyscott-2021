@@ -1,0 +1,92 @@
+.contact {
+    width: 100%;   
+    padding-bottom: 20vh; 
+    @include media("<=phone") {
+        padding-bottom: 40vh; 
+    }
+    h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 34px;
+        line-height: 43px;
+        margin-bottom: 8px;
+        font-weight: 500;
+
+    }
+    
+    .primary {
+        font-size: 24px;
+        line-height: 40px;
+        color: $white;
+        width: 100%;
+        padding: 8px 88px;
+        padding-top: 0;
+        
+        @include media("<=phone") {
+            font-size: 16px;
+            padding: 32px 8px;
+            line-height: 30px;
+            padding-top: 0;
+        }
+    }
+
+    .secondary {
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: 400;
+        color: #9F9F9F;
+        width: 100%;
+        padding: 88px;
+        padding-top: 0;
+
+        span {
+            color: $primary;
+            font-weight: 700;
+            position: relative;
+            &::after {
+                top: 24px;
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 2px;
+                left: 0;
+                position: absolute;
+                background: $primary;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                width: 0;
+            }
+            &:hover {
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+
+        @include media("<=phone") {
+            font-size: 14px;
+            padding: 32px 8px;
+            line-height: 30px;
+            padding-top: 0;
+        }
+    }
+    
+
+
+    .contact-links {
+        display: flex;
+        padding: 88px;
+        padding-top: 0;
+        justify-content: space-evenly;
+        width: 100%;
+        
+        @include media("<=phone") {
+            padding: 32px 8px;
+            padding-top: 0;
+        }
+        a {
+            color: $white;
+            
+        }
+        
+    }
+}

@@ -1,0 +1,37 @@
+footer {
+    position: relative;
+    width:100%;
+    padding: 32px 0;
+    bottom: 0;
+
+    .divider {
+        height: 1px;
+        width: 100%;
+        background-color: $white;
+        margin-bottom: 16px;
+    }
+
+    .footer-pages {
+        a {
+            font-size: 16;
+            color: $white;
+            text-decoration: none;
+            margin-right: 16px;
+        }
+    }
+
+    .footer-social {
+        a {
+            cursor: pointer;
+            color: $white;
+            margin-left: 24px;
+            text-decoration: none;
+            svg {
+                width: 16px;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

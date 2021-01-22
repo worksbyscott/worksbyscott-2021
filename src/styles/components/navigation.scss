@@ -1,0 +1,32 @@
+nav {
+    position: relative;
+    width: 100%;
+    height: 160px;
+
+    @include media("<=phone") {
+        height: 88px;
+    }
+
+    .logo {
+        svg {
+          fill: white;
+          width: 28px;
+          height: 32px;
+        }
+      }
+
+    .nav-links {
+        a {
+            width: 28px;
+            cursor: pointer;
+            color: $white;
+            margin-left: 24px;
+            text-decoration: none;
+            svg {
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

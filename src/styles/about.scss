@@ -1,0 +1,37 @@
+.about {
+
+    
+        width: 100%;
+        .primary {
+            font-size: 24px;
+            line-height: 40px;
+            color: $white;
+            width: 100%;
+            padding: 8px 88px;
+            padding-top: 0;
+            
+            @include media("<=phone") {
+                font-size: 16px;
+                padding: 32px 8px;
+                line-height: 30px;
+                padding-top: 0;
+            }
+        }
+        .secondary {
+            font-size: 20px;
+            line-height: 40px;
+            font-weight: 400;
+            color: #9F9F9F;
+            width: 100%;
+            padding: 88px;
+            padding-top: 0;
+    
+            @include media("<=phone") {
+                font-size: 14px;
+                padding: 32px 8px;
+                line-height: 30px;
+                padding-top: 0;
+            }
+        }
+    
+}

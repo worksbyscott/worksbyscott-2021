@@ -1,0 +1,16 @@
+.dynamic-image {
+    width: 100%;
+    height: 467px;
+    overflow: hidden;
+    background-color: green;
+
+    @include media("<=phone") {
+        height: 240px;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}

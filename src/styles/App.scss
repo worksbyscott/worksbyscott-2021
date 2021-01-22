@@ -1,0 +1,131 @@
+@import 'breakpoints.scss';
+@import 'varibles.scss';
+
+//Page Styles
+
+@import './projects.scss';
+@import './about.scss';
+@import './contact.scss';
+
+//Component Styles
+
+@import './components/navigation.scss';
+@import './components/pagetitle.scss';
+@import './components/dynamicImage.scss';
+@import './components/homeImage.scss';
+@import './components/footer.scss';
+
+//Import font
+
+@font-face {
+  font-family: 'Circular-std';
+  src: url(./fonts/circular.woff) format('opentype');
+}
+
+body,
+html {
+  user-select: none;
+  background: $background;
+  color: $white;
+  overscroll-behavior: none;
+  margin: 0;
+  font-family: "Circular-std", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 812px;
+  min-width: 812px;
+  margin: 0 auto;
+  height: 100%;
+  @include media("<=1560px") {
+    width: 812px;
+    min-width: 812px
+  }
+  @include media("<=desktop") {
+    width: 812px;
+    min-width: 812px
+  }
+  @include media("<=1080px") {
+    width: 100%;
+    min-width: 100%;
+  }
+  .row {
+    display: flex;
+    height: 100%;
+    padding: 0 32px;
+    @include media("<=phone") {
+      padding: 0 32px;
+    }
+  }
+  .v-center {
+    align-items: center;
+  }
+  .space-between {
+    justify-content: space-between;
+  }
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.container-fluid {
+  width: 100%;
+  height: 100%;
+  .row {
+    display: flex;
+    height: 100%;
+  }
+}
+
+.App {
+  z-index: 2;
+  transform: translateY(0);
+  position: relative;
+}
+
+
+
+.intro-overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+
+.intro-headline {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  .intro-line {
+    z-index: 99;
+    color: $black;
+    height: 80px;
+    overflow: hidden;
+    span {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 48px;
+      @include media("<=phone") {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  z-index: 20;
+}
+

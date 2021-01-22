@@ -1,0 +1,66 @@
+.home-hero {
+    position: relative;
+    width: 100%;
+    height: 467px;
+    overflow: hidden;
+    margin-bottom: 32px;
+
+    @include media("<=phone") {
+        height: 200px;
+    }
+
+    .hero-info {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-color: rgb(34,34,34, 0.8);
+        text-decoration: none;
+        padding: 32px;
+        transition: .8s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        .hero-details {
+            position: absolute;
+            width: 64%;
+            margin: 0;
+            h1 {
+                margin-top: 0;
+                font-size: 24px;
+                font-weight: 600;
+                color: white;
+                line-height: 41px;
+            }
+    
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                color: #B1B1B1;
+                line-height: 30px;
+            }
+    
+        }
+        &:hover {
+            opacity: 1;
+            h1 {
+                bottom: 0;
+            }
+            p {
+                bottom: 0;
+            }
+            
+        }
+    }
+    .hero-action {
+        svg {
+
+        }
+
+    }
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+}
