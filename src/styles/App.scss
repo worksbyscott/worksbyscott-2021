@@ -34,6 +34,9 @@ html {
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  &.no-scroll {
+    overflow-y: hidden;
+  }
 }
 
 .container {
@@ -121,11 +124,12 @@ html {
   }
 }
 
-.overlay {
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  background-color: white;
-  z-index: 20;
-}
+  .overlay {
+    position: absolute;
+    height: 3000px;
+    width: 100%;
+    background-color: white;
+    z-index: 20;
+  }
+
 
