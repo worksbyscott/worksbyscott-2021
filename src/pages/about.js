@@ -9,10 +9,11 @@ const About = () => {
             <PageTitle headline="About Me" url="/contact" action="Let's Connect" />
             <div className="about">
                 <div className="row">
-                    <h1 className="primary">My name is Scott Templeton, 4th year Edinburgh Napier University student completing an Honours in User Experience Design.</h1>
+                    <h1 className="primary">I am a Front End Developer and UI/UX Designer with minimal backend experience, primarily working with in React. Graduating from Edinburgh Napier with an Honours in User Experience Design.</h1>
                 </div>
                 <div className="row">
-                    <h1 className="secondary">My name is Scott Templeton, 4th year Edinburgh Napier University student completing an Honours in User Experience Design. Focused on producing elegant UX design and experience with Front-end Javascipt technologies such as React and Vue to produce web-based applications. Currently developing an Javascipt animation library to implement micro interactions and responsive animations with an lightweight code base. </h1>
+                    <h1 className="secondary">Originally from a Graphic Design background and experience of illustration, combining this expertise with user experience methodogly to produce effective and engaging web applications. Currently looking for an graduate job within the industry to progress my career.
+</h1>
                 </div>
             </div>
         </Page>

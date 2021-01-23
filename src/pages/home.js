@@ -9,8 +9,8 @@ import HomeImage from '../components/homeImage';
 
 const projects = [
   { title: "Online Community Radio Station", desc: "CellaFm is a Edinburgh based online radio station created during the COVID-19 to help promote local artists and DJs.", source: "cella", link: "/cella" },
-  { title: "Cipher Messenger", desc: "CellaFm is a Edinburgh based online radio station created during the COVID-19 to help promote local artists and DJs.", source: "cipher", link: "/cipher" },
-  { title: "Company Branding Concept", desc: "Info will go here!", source: "echo", link: "/echo" },
+  { title: "Cipher Messenger", desc: "Turbo Ciphers is an encoded messenger allowing users to select traditional word ciphers to encode their messages with keywords. The aim was to create a fully private messaging service. ", source: "cipher", link: "/cipher" },
+  { title: "Company Branding Concept", desc: "Web Design prototype and concept branding project. Project aim was to create a fluid design system to apply brand guidelines to UX design. Echo is an mockup audio company selling high quality audio earphones.", source: "echo", link: "/echo" },
 ]
 
 const Home = () => {
