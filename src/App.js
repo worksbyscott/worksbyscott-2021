@@ -70,6 +70,7 @@ const App = () => {
                       key={path}
                       render={() => <Component key={path + "Comp"} intro={introduction} />} />
                   ))}
+                  <Route key={"noMatch"} component={Home} />
                 </Switch>
               </AnimatePresence>
             )} />
