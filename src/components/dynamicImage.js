@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const DynamicImage = ({ source }) => {
     return (
         <>
-            <img src={require('../images/' + source + '.jpg')} />
+            <LazyLoadImage
+                alt={source}
+                effect="blur"
+                src={require('../images/' + source + '.jpg')} />
         </>
     );
 }
