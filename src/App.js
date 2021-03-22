@@ -15,6 +15,7 @@ import Cella from './pages/projects/cella';
 import Echo from './pages/projects/echo';
 import About from './pages/about';
 import Contact from './pages/contact';
+import Prism from './pages/projects/prism'
 
 //Componenets
 
@@ -29,6 +30,7 @@ const routes = [
   { title: "Online Community Radio Station", path: '/cella', Component: Cella },
   { title: "Concept Branding", path: '/echo', Component: Echo },
   { title: "About me", path: '/about', Component: About },
+  { title: "Prism Library", path: '/prism', Component: Prism },
   { title: "Let's connect", path: '/contact', Component: Contact },
 ];
 
@@ -40,20 +42,11 @@ const App = () => {
 
   const [introduction, setIntroduction] = useState(false);
 
-
   useEffect(() => {
-
     setTimeout(() => {
       setIntroduction(true);
     }, INTRODUCTION_TIMEOUT);
   })
-
-
-
-
-
-
-
 
   return (
     <div className="app">
@@ -76,8 +69,8 @@ const App = () => {
             )} />
           </div>
         ) : (
-            <Introduction key="intro-component" />
-          )}
+          <Introduction key="intro-component" />
+        )}
       </AnimatePresence>
     </div>
 

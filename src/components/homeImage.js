@@ -13,6 +13,9 @@ const HomeImage = ({ title, description, source, link }) => {
                             <h1>{title}</h1>
                             <p>{description}</p>
                         </div>
+                        <div className="action">
+                            <p>View Project   →</p>
+                        </div>
                     </div>
                     <div className="hero-action">
 

@@ -3,6 +3,7 @@ import React from "react";
 import Page from '../../components/page'
 import PageTitle from '../../components/pagetitle'
 import ProjectImage from '../../components/projectImage'
+import { footerAction as FooterAction } from "../../components/footerAction";
 
 const Cella = () => {
     return (
@@ -16,7 +17,7 @@ const Cella = () => {
             />
             <div className="project">
                 <div className="row">
-                    <ProjectImage source="cella" />
+                    <ProjectImage source="cella/cella2" />
                 </div>
                 <div className="row">
                     <h1 className="primary">
@@ -24,15 +25,33 @@ const Cella = () => {
                 </h1>
                 </div>
                 <div className="row">
-                    <ProjectImage source="cella" />
+                    <ProjectImage source="cella/cella" />
                 </div>
                 <div className="row">
-                    <h1 className="secondary">Built using ReactJS on the front-end and NodeJS on the back-end in conjunction with AirtimePro’s API for audio streaming to broadcast the shows live.</h1>
+                    <h1 className="secondary">Originally produced using Node in and HandleBars to emulate an SPA framework approach with minimal libraries used in the front-end. Now being redeveloped in React on the front-end and express. </h1>
                 </div>
                 <div className="row">
-                    <ProjectImage source="cella" />
+                    <ProjectImage source="cella/cella3" />
+                </div>
+                <div className="row">
+                    <h1 className="secondary">In this transition to more modern framework approach, I decided to rework the CellaFM brand and website design to promote a more consistent brand image and push my capabilities in the process. </h1>
+                </div>
+                <div className="row">
+                    <ProjectImage source="cella/cella4" />
+                </div>
+                <div className="row">
+                    <h1 className="secondary">Originally produced using Node in and HandleBars to emulate an SPA framework approach with minimal libraries used in the front-end. Now being redeveloped in React on the front-end and express. </h1>
+                </div>
+                <div className="row">
+                    <ProjectImage source="cella/cella5" />
                 </div>
             </div>
+            <FooterAction
+                label="under development"
+                action="View Github"
+                title="CellaFM currently under development"
+                url="https://github.com/worksbyscott/cella.fm/tree/master/cella-fm"
+            />
 
         </Page>
     );
