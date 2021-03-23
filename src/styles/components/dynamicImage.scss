@@ -7,10 +7,15 @@
     @include media("<=phone") {
         height: 240px;
     }
-    img {
+    span {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
+
 
 }
